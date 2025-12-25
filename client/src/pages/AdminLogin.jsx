@@ -35,7 +35,7 @@ const AdminLogin = () => {
     };
 
     return (
-        <div className="page-container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="page-container" style={{ minHeight: '100vh', marginTop: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <motion.div 
                 className="glass" 
                 style={{ padding: '2rem', width: '100%', maxWidth: '400px', borderRadius: '1rem' }}

@@ -98,6 +98,10 @@
 }
 
 @media (max-width: 992px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
   .footer-container {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -107,5 +111,23 @@
 @media (max-width: 576px) {
   .footer-container {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-logo, .social-links, .contact-list li {
+    justify-content: center;
+  }
+
+  .footer-desc {
+    margin: 1rem auto 0;
+  }
+
+  .social-links {
+    margin-bottom: 1rem;
+  }
+
+  .contact-list li {
+    text-align: center;
   }
 }

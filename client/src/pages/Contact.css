@@ -34,6 +34,7 @@
   font-size: 1.5rem;
   background: var(--gradient-text);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -149,7 +150,56 @@
 
 /* Responsiveness */
 @media (max-width: 992px) {
+  .contact-page {
+    padding-top: 100px;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-info-col {
+    order: 2;
+  }
+
+  .contact-form-col {
+    order: 1;
+  }
+
+  .section-desc {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-card, .contact-form {
+    padding: 1.5rem;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+
+  .icon-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-card h3, .contact-form h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-box {
+    margin-bottom: 0.5rem;
   }
 }

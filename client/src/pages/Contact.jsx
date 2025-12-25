@@ -75,7 +75,7 @@ const Contact = () => {
                         <div className="icon-box"><MapPin size={24} /></div>
                         <div>
                             <h4>Our Office</h4>
-                            <p>123 Tech Park, Innovation City<br />Bangalore, India - 560100</p>
+                            <p>Address: HI 239, near STATE HOUSING BOARD, Harmu Housing Colony, <br />Harmu, Ranchi, Jharkhand 834002</p>
                         </div>
                     </div>
                     <div className="contact-item">
@@ -98,7 +98,7 @@ const Contact = () => {
             {/* Map Integration */}
             <div className="map-container glass">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001691424683!2d77.61876587489374!3d12.971891487343467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1709230000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/dir//HI+239,+near+STATE+HOUSING+BOARD,+Harmu+Housing+Colony,+Harmu,+Ranchi,+Jharkhand+834002/@23.3504768,85.3639168,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f4e1f65b23641f:0x267fb846446af5dc!2m2!1d85.3048913!2d23.3588258?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

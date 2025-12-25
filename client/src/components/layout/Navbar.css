@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: var(--header-height);
-  z-index: 1000;
+  z-index: 9999;
   transition: all 0.3s ease;
   background: transparent;
   border-bottom: 1px solid transparent;
@@ -29,19 +29,22 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
 }
 
 .logo-icon {
-  color: var(--primary);
-  width: 32px;
-  height: 32px;
+  width: auto;
+  height: 60px;
+  max-width: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0, 242, 255, 0.3));
+  margin-left: -8px; /* adjust value as needed */
 }
+
 
 .logo-text {
   background: var(--text-primary);
@@ -81,47 +84,154 @@
 }
 
 .mobile-toggle {
-  display: none;
-  background: none;
-  border: none;
+  display: none !important;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 8px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.mobile-toggle:hover {
+  background: rgba(0, 240, 255, 0.1);
+  border-color: var(--primary);
 }
 
 .mobile-menu {
-  position: absolute;
-  top: var(--header-height);
-  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
+  height: 100vh;
   background: var(--bg-dark);
-  padding: 2rem;
+  padding: 80px 2rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow-y: auto;
 }
 
 .mobile-link {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-secondary);
+  padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.mobile-link:hover {
+  color: var(--primary);
+  padding-left: 10px;
 }
 
 .mobile-link.highlight {
   color: var(--primary);
   border-bottom: none;
+  background: rgba(0, 240, 255, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .desktop-only {
+@media (max-width: 1024px) {
+  .nav-links, .nav-actions {
     display: none;
   }
   
   .mobile-toggle {
-    display: block;
+    display: flex !important;
   }
+}
+
+@media (max-width: 480px) {
+  .logo-icon {
+    height: 45px;
+    max-width: 160px;
+  }
+}
+
+/* Dropdown Styles */
+.nav-item-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.dropdown-arrow {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Anchor to the bottom of the nav item */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 20, 40, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.dropdown-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+/* Mobile Sublinks */
+.mobile-link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-sublinks {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-sublink {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-sublink:hover {
+  color: var(--primary);
 }

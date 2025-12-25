@@ -23,11 +23,11 @@ const Footer = () => {
         </div>
 
         <div className="footer-col">
-          <h3>Solutions</h3>
+          <h3>Services</h3>
           <ul>
-            <li><Link to="/solutions">College Management</Link></li>
-            <li><Link to="/solutions">Hospital Management</Link></li>
-            <li><Link to="/iot">Smart Campus (IoT)</Link></li>
+            <li><Link to="/services">College Management</Link></li>
+            <li><Link to="/services">Hospital Management</Link></li>
+            <li><Link to="/technology-innovation">Technology & Innovation</Link></li>
             <li><Link to="/infrastructure">Smart Infrastructure</Link></li>
             <li><Link to="/networking">IT Networking</Link></li>
           </ul>
@@ -49,7 +49,7 @@ const Footer = () => {
           <ul className="contact-list">
             <li>
               <MapPin size={18} />
-              <span>123 Tech Park, Innovation City, India</span>
+              <span>Address: HI 239, near STATE HOUSING BOARD, Harmu Housing Colony, Harmu, Ranchi, Jharkhand 834002</span>
             </li>
             <li>
               <Phone size={18} />

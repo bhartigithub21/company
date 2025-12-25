@@ -39,7 +39,7 @@ const Home = () => {
             <motion.h1 variants={fadeInUp}>
               End-to-End IT, Smart <br />
               Infrastructure & <br />
-              <span className="text-gradient">IoT Solutions</span>
+              <span className="text-gradient">IoT Services</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="hero-desc">
               Empowering enterprises with future-ready technology, seamless connectivity, and intelligent automation.
@@ -75,7 +75,7 @@ const Home = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2>Software & Digital <span className="text-gradient">Solutions</span></h2>
+            <h2>Software & Digital <span className="text-gradient">Services</span></h2>
             <p>Empowering institutions with tailored software for enhanced efficiency and growth.</p>
           </motion.div>
 
@@ -120,7 +120,7 @@ const Home = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2>IoT-based <span className="text-gradient">Smart Campus</span> Solutions</h2>
+            <h2><span className="text-gradient">Technology & Innovation</span> Services</h2>
             <p className="iot-desc">
               Real-time monitoring, energy efficiency, and automated control for modern campuses.
             </p>
@@ -129,7 +129,7 @@ const Home = () => {
               <li><Cpu className="feature-icon" /> Sensor-based Monitoring Systems</li>
               <li><Shield className="feature-icon" /> Energy Management & Asset Tracking</li>
             </ul>
-            <Link to="/iot" className="btn btn-primary mt-4">Explore IoT Solutions <ArrowRight size={18} /></Link>
+            <Link to="/technology-innovation" className="btn btn-primary mt-4">Explore Technology & Innovation <ArrowRight size={18} /></Link>
           </motion.div>
 
           <motion.div 
@@ -153,7 +153,7 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <h2>Ready to Transform Your Infrastructure?</h2>
-            <p>Partner with Arthyme for cutting-edge IT and IoT solutions.</p>
+            <p>Partner with Arthyme for cutting-edge IT and IoT services.</p>
             <div className="cta-actions">
               <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
             </div>
