@@ -15,21 +15,28 @@ const SoftwareDigital = () => {
   return (
     <div className="page-container">
       {/* Hero Section */}
-      <section className="relative pt-[200px] pb-20 overflow-hidden">
-        <div className="container relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="flex flex-col items-center h-[20vh]">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-gradient">Software & Digital</span>
-              <br />
-              <span className="text-white">Solutions</span>
-            </h1>
-            </div>
-          </motion.div>
+      <section className="relative pt-[160px] pb-20">
+
+
+
+
+
+    <div className="container relative z-10 text-center">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}
+  >
+    <div className="flex flex-col items-center h-[20vh]">
+      <h1 className="text-5xl md:text-7xl font-bold mb-6">
+        <span className="text-gradient">Software & Digital</span>
+        <br />
+        <span className="text-white">Solutions</span>
+      </h1>
+    </div>
+  </motion.div>
+
+
           
           <motion.p 
             className="text-xl text-slate-300 max-w-2xl mx-auto mb-10"

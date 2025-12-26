@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Infrastructure = () => (
+const IThardwarenetworking = () => (
   <div className="page-container" style={{ paddingTop: '100px' }}>
     <div className="container">
       <h1 className="text-gradient">IT Hardware & Networking</h1>
@@ -9,4 +9,4 @@ const Infrastructure = () => (
   </div>
 );
 
-export default Infrastructure;
+export default IThardwarenetworking;

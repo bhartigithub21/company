@@ -10,11 +10,12 @@ import Industries from './pages/Industries';
 import Contact from './pages/Contact';
 import SmartClass from './pages/SmartClass';
 import VideoConferencing from './pages/VideoConferencing';
-import Infrastructure from './pages/Infrastructure';
+import IThardwarenetworking from './pages/IThardwarenetworking';
 import Technology from './pages/Technology';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import SoftwareDigital from './pages/SoftwareDigital';
+import IoTSmart from './pages/IoTSmart';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -43,9 +44,10 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/smart-class" element={<SmartClass />} />
             <Route path="/video-conferencing" element={<VideoConferencing />} />
-            <Route path="/infrastructure" element={<Infrastructure />} />
+            <Route path="/ithardwarenetworking" element={<IThardwarenetworking />} />
             <Route path="/technology" element={<Technology />} />
             <Route path="/services/software-digital" element={<SoftwareDigital />} />
+            <Route path="/services/iot-smart" element={<IoTSmart />} />
             
             {/* Admin Routes */}
             <Route path="/admin/login" element={<AdminLogin />} />
