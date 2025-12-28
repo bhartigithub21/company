@@ -134,7 +134,7 @@ const Industries = () => {
       <div className="page-header">
         <div className="container">
           <motion.div 
-            className="section-header text-center mb-12"
+            className="section-header text-center mb-12 max-w-3xl mx-auto"
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
