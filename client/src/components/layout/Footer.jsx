@@ -101,7 +101,6 @@ const Footer = () => {
         </div>
       </div>
 
-      <Link to="/admin/login">Admin Login</Link>
 
       <div className="footer-bottom container">
         <p>
