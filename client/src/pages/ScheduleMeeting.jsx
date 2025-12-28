@@ -70,7 +70,7 @@ const ScheduleMeeting = () => {
             }}
           >
             <Cal
-              calLink="rahul-raman-cevj82/30min"
+              calLink="lovely-bharti-1041om/30min"
               style={{ width: "100%", height: "100%", overflow: "scroll" }}
               config={{ layout: "month_view" }}
             />
