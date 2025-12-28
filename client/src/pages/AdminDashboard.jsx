@@ -21,7 +21,7 @@ const AdminDashboard = () => {
       try {
         // Fetch Enquiries
         const resEnquiries = await fetch(
-          "http://localhost:3000/api/admin/enquiries",
+          "https://company-d78j.onrender.com/api/admin/enquiries",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -29,7 +29,7 @@ const AdminDashboard = () => {
 
         // Fetch Meetings
         const resMeetings = await fetch(
-          "http://localhost:3000/api/meetings/all",
+          "https://company-d78j.onrender.com/api/meetings/all",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -57,7 +57,7 @@ const AdminDashboard = () => {
   const handleLogout = async () => {
     try {
       const token = localStorage.getItem("adminToken");
-      await fetch("http://localhost:3000/api/admin/logout", {
+      await fetch("https://company-d78j.onrender.com/api/admin/logout", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

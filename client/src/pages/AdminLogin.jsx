@@ -13,7 +13,7 @@ const AdminLogin = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('http://localhost:3000/api/admin/login', {
+            const res = await fetch('https://company-d78j.onrender.com/api/admin/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

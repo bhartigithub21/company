@@ -29,7 +29,7 @@ const ScheduleMeeting = () => {
           };
 
           try {
-            await fetch("http://localhost:3000/api/meetings/book", {
+            await fetch("https://company-d78j.onrender.com/api/meetings/book", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(payload),
@@ -103,7 +103,7 @@ const handleBookingSuccess = async (e) => {
   };
 
   try {
-    await fetch("http://localhost:3000/api/meetings/book", {
+    await fetch("https://company-d78j.onrender.com/api/meetings/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
