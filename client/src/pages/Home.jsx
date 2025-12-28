@@ -48,7 +48,7 @@ const Home = () => {
               <Link to="/contact" className="btn btn-primary">
                 Contact Us
               </Link>
-              <Link to="/demo" className="btn btn-outline">
+              <Link to="/schedule" className="btn btn-outline">
                 Request Demo
               </Link>
             </motion.div>

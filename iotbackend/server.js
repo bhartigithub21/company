@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/contact", require("./routes/contactRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
+app.use("/api/meetings", require("./routes/meetingRoutes"));
 
 // Database Connection
 // mongoose
