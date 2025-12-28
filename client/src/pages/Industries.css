@@ -1,7 +1,7 @@
 .industries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  gap: 1.5rem;
   margin-top: 0;
 }
 
@@ -345,4 +345,17 @@
     padding: 1.5rem 2rem;
     gap: 1rem;
   }
+}
+
+.page-header {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+
+.page-container {
+  padding-bottom: 6rem;
+}
+
+footer {
+  margin-top: 4rem;
 }

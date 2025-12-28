@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-col">
           <Link to="/" className="footer-logo">
-            <CircuitBoard className="logo-icon" />
+            {/* <CircuitBoard className="logo-icon" /> */}
             <span className="logo-text">Arthyme</span>
           </Link>
           <p className="footer-desc">

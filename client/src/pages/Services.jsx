@@ -19,40 +19,41 @@ const serviceCategories = [
     id: 'iot',
     title: 'IoT & Smart Solutions',
     items: [
-      { name: 'Smart Energy Monitoring ⚡', path: '/services/iot-smart' },
-      { name: 'Occupancy Sensors 👥', path: '/services/iot-smart' },
-      { name: 'Environmental Controls 🌡️', path: '/services/iot-smart' },
-      { name: 'Asset Tracking 📍', path: '/services/iot-smart' }
+      { name: 'IoT-based Smart Campus Solutions 🏫', path: '/services/iot-smart' },
+      { name: 'Smart Attendance & Access Control 🔑', path: '/services/iot-smart' },
+      { name: 'Sensor-based Monitoring Systems �', path: '/services/iot-smart' },
+      { name: 'Energy Management & Asset Tracking ⚡', path: '/services/iot-smart' },
+      { name: 'IoT dashboards with infographic-style visuals �', path: '/services/iot-smart' }
     ]
   },
   {
     id: 'infrastructure',
-    title: 'Smart Infrastructure',
+    title: 'Smart Class & Smart Infrastructure',
     items: [
       { name: 'Smart Classrooms 🎓', path: '/services/smart-infrastructure' },
-      { name: 'Digital Signage 🖥️', path: '/services/smart-infrastructure' },
-      { name: 'Campus Automation 🏫', path: '/services/smart-infrastructure' },
-      { name: 'Building Management 🏢', path: '/services/smart-infrastructure' }
+      { name: 'Smart Meeting Rooms 🤝', path: '/services/smart-infrastructure' },
+      { name: 'Auditoriums & Command Centers �️', path: '/services/smart-infrastructure' },
+      { name: 'Interactive panels, digital podiums, AV automation 🖥️', path: '/services/smart-infrastructure' }
     ]
   },
   {
     id: 'video',
-    title: 'Video Conferencing',
+    title: 'Video Conferencing & Collaboration',
     items: [
-      { name: 'Hybrid Meeting Rooms 🎥', path: '/services/video-conferencing' },
-      { name: 'Remote Collaboration 🤝', path: '/services/video-conferencing' },
-      { name: 'Video Hardware 📹', path: '/services/video-conferencing' },
-      { name: 'Unified Communications 📞', path: '/services/video-conferencing' }
+      { name: 'Hybrid classrooms & meetings 📹', path: '/services/video-conferencing' },
+      { name: 'VC cameras, microphones, controllers 🎙️', path: '/services/video-conferencing' },
+      { name: 'Live streaming & recording solutions �', path: '/services/video-conferencing' }
     ]
   },
   {
     id: 'hardware',
     title: 'IT Hardware & Networking',
     items: [
-      { name: 'Enterprise Networking 🌐', path: '/services/it-hardware' },
-      { name: 'Server Solutions 💾', path: '/services/it-hardware' },
-      { name: 'Data Center Infrastructure 🔋', path: '/services/it-hardware' },
-      { name: 'Security Hardware 🔒', path: '/services/it-hardware' }
+      { name: 'Servers, desktops, laptops 💻', path: '/services/it-hardware' },
+      { name: 'Networking & structured cabling 🌐', path: '/services/it-hardware' },
+      { name: 'UPS, racks, power backup �', path: '/services/it-hardware' },
+      { name: 'CCTV & surveillance systems �', path: '/services/it-hardware' },
+      { name: 'AMC & IT support services �️', path: '/services/it-hardware' }
     ]
   }
 ];
@@ -74,7 +75,7 @@ const Services = () => {
         >
           Our Expertise
         </motion.h1>
-        <p className="hero-desc">Navigate our comprehensive ecosystem of digital solutions.</p>
+        <p className="max-w-2xl mx-auto">Navigate our comprehensive ecosystem of digital solutions.</p>
 
         <div className="services-nav-container section">
           {serviceCategories.map((category, index) => (
