@@ -44,7 +44,7 @@ const ScheduleMeeting = () => {
 
   return (
     <div className="page-container">
-      <div className="container" style={{ marginTop: "2rem" }}>
+      <div className="container" style={{ marginTop: "5rem" }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
