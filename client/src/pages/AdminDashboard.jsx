@@ -80,7 +80,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="page-container">
-      <div className="container" style={{ marginTop: "2rem" }}>
+      <div className="container" style={{ marginTop: "5rem" }}>
         <div
           style={{
             display: "flex",
@@ -97,7 +97,7 @@ const AdminDashboard = () => {
               display: "flex",
               alignItems: "center",
               gap: "0.5rem",
-              background: "rgba(255,255,255,0.1)",
+              background: "rgba(255, 255, 255, 0.84)",
             }}
           >
             Logout <LogOut size={18} />

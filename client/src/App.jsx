@@ -13,7 +13,7 @@ import Services from "./pages/Services";
 import TechnologyInnovation from "./pages/TechnologyInnovation";
 import Industries from "./pages/Industries";
 import Contact from "./pages/Contact";
-import SmartClass from "./pages/SmartClass";
+import SmartInfrastructure from "./pages/SmartInfrastructure"; 
 import VideoConferencing from "./pages/VideoConferencing";
 import IThardwarenetworking from "./pages/IThardwarenetworking";
 import Technology from "./pages/Technology";
@@ -51,10 +51,15 @@ function App() {
             />
             <Route path="/industries" element={<Industries />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/smart-class" element={<SmartClass />} />
-            <Route path="/video-conferencing" element={<VideoConferencing />} />
+            {/* <Route path="/smart-infrastructure" element={<SmartInfrastructure />} /> */}
             <Route
-              path="/ithardwarenetworking"
+  path="/services/smart-infrastructure"
+  element={<SmartInfrastructure />}
+/>
+
+            <Route path="/services/video-conferencing" element={<VideoConferencing />} />
+            <Route
+              path="/services/it-hardware"
               element={<IThardwarenetworking />}
             />
             <Route path="/technology" element={<Technology />} />
